@@ -47,7 +47,7 @@
     <section class="hero-bg-wrap">
     	<div class="wrap flex-container">
 			<h1 class="hero__header">Эффективные решения для вашего бизнеса</h1>
-			<button type="button" class="hero__button">Заказать услугу</button>
+			<button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
 		</div>	
 	</section>
 	    
@@ -100,9 +100,24 @@
           	 <div class="wrap">
 			<h2 class="primary-header">Чем мы занимаемся</h2>
 			<ul class="img-list list flex-container">
-				<li class="img-list__item"> <img src="./images/index/img1.jpg" class="img-list__img" width="370" alt="кодинг"></li>
-				<li class="img-list__item"> <img src="./images/index/img2.jpg" class="img-list__img" width="370" alt="мобильная разработка"></li>
-				<li class="img-list__item"><img src="./images/index/img3.jpg" class="img-list__img" width="370" alt="таблет разработка"></li>
+				<li class="img-list__item"> 
+					<img src="./images/index/img1.jpg" class="img-list__img"  alt="кодинг">
+				<div class="img-list__wrapper">
+							<p class="img-list__text">Десктопные приложения</p>
+						</div>
+					</li>
+				<li class="img-list__item"> 
+					<img src="./images/index/img2.jpg" class="img-list__img"  alt="мобильная разработка">
+				<div class="img-list__wrapper">
+							<p class="img-list__text">Мобильные приложения</p>
+						</div>
+					</li>
+				<li class="img-list__item">
+					<img src="./images/index/img3.jpg" class="img-list__img"  alt="таблет разработка">
+					<div class="img-list__wrapper">
+							<p class="img-list__text">Дизайнерские решения</p>
+						</div>
+					</li>
 			</ul>
 		    </div>
 		       </section>
@@ -371,5 +386,17 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button type="button" class="modal-close-btn" data-modal-close>
+				<svg class="" width="11" height="11">
+					<use href="images/sprite.svg#icon-Vector"></use>
+				</svg>
+			</button>
+		</div>
+	</div>		
+
+	<script src="./js/modal.js"></script>
 </body>
 </html>
